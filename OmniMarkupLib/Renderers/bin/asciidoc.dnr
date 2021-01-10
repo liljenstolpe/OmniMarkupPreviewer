@@ -8,5 +8,5 @@ begin
 rescue
 end
 
-# text = $stdin.read
-$stdout.write $stdin.read
+text = $stdin.read
+$stdout.write Asciidoctor::Document.new(text).render
